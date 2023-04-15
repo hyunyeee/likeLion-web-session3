@@ -1,17 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&family=Roboto:ital,wght@1,300&display=swap");
-
 * {
   font-family: "Jua", sans-serif;
 }
-
 body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
-
 .wrapImg {
   text-align: center;
 }
-
 .introContent {
   margin: 50px;
   color: #000000;
@@ -23,13 +19,11 @@ body {
   padding-bottom: 5px;
   border: 3px dashed #000000;
 }
-
 .wrapHobby {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
 }
-
 .hobbyContent {
   line-height: 120px;
   text-align: center;
@@ -39,12 +33,9 @@ body {
   border: 3px dashed #000000;
   background-color: antiquewhite;
 }
-
 h3 {
   text-align: center;
-  background-color: white;
 }
-
 .wrapSpecial {
   margin: auto;
   width: 300px;
@@ -54,7 +45,6 @@ h3 {
   overflow: hidden;
   position: relative;
 }
-
 .specialContent {
   width: 100%;
   height: 100%;
@@ -65,21 +55,49 @@ h3 {
   bottom: 0px;
   overflow: hidden;
 }
-
-.specialContent h3 {
+.specialContentTitle {
   width: 300px;
   height: 300px;
   line-height: 300px;
   background-color: antiquewhite;
 }
-
 .wrapSpecial:hover .specialContent {
   bottom: 200px;
 }
-
 .hideContent {
   width: 100%;
   height: 100%;
   position: absolute;
   padding-top: 150px;
+  white-space: pre-wrap;
+}
+.darkMode {
+  background-color: gray;
+  color: white;
+}
+.introContentDarkMode {
+  margin: 50px;
+  color: white;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border: 3px dashed white;
+}
+.hobbyContentDarkMode {
+  line-height: 120px;
+  text-align: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  border: 3px dashed white;
+  background-color: gray;
+}
+.specialContentTitleDarkMode {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  background-color: lightgray;
 }

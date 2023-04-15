@@ -4,7 +4,7 @@ const Info = (props) => {
     return (
         <>
             <h3>INFO</h3>
-            <div className="introContent">
+            <div className={props.dark ? "introContentDarkMode" : "introContent"}>
                 <p>{name}</p>
                 <p>생일 : {birthday}</p>
                 <p>나이 : {age}</p>

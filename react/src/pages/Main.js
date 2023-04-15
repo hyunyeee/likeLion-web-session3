@@ -5,13 +5,25 @@ import Info from "./Info";
 import SpecialList from "./SpecialList";
 
 import Data from "./Data.json"
+import Darkmode from "./Darkmode";
+
+import {useState} from "react";
+
 
 const Main = () => {
+
+    const [isDark, setIsDark] = useState(true);
+
     return (
         <>
-            <Info data={Data} />
-            <HobbyList data={Data} />
-            <SpecialList data={Data} />
+
+            <div className={isDark ? "darkMode" : ""} >
+                <Darkmode darkMode={setIsDark} dark={isDark} />
+                <Info data={Data} dark={isDark}/>
+                <HobbyList data={Data} dark={isDark}/>
+                <SpecialList data={Data} dark={isDark} />
+            </div>
+
         </>
     );
 };

@@ -12,7 +12,7 @@ const HobbyList = (props) => {
             <h3>HOBBY</h3>
             <div className="wrapHobby">
                 {hobby.map((data, index) => (
-                    <Hobby data={data} key={index}/>
+                    <Hobby data={data} key={index} dark={props.dark}/>
                 ))}
             </div>
 

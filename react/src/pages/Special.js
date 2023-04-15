@@ -6,9 +6,15 @@ const Special = (props) => {
     return (
         <>
             <div className="specialContent">
-                <h3>{props.data.title}</h3>
+                <h3
+                    className=
+                        {props.dark ? "specialContentTitleDarkMode" : "specialContentTitle"}
+                >
+                    {props.data.title}
+                </h3>
             </div>
-            <div className="hideContent">
+            <div
+                className="hideContent">
                 {props.data.content}
             </div>
         </>

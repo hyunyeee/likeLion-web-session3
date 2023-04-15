@@ -10,7 +10,7 @@ const SpecialList = (props) => {
             <h3>특이점</h3>
             {special.map((data, index) => (
                 <div className="wrapSpecial">
-                    <Special data={data} key={index}/>
+                    <Special data={data} key={index} dark={props.dark}/>
                 </div>
             ))}
         </>
