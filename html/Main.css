@@ -82,4 +82,5 @@ h3 {
   height: 100%;
   position: absolute;
   padding-top: 150px;
+  white-space: pre-wrap;
 }
