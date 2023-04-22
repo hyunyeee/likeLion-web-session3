@@ -12,24 +12,26 @@
   "contents": [
     {
       "link": "https://github.com/hyunyeee/HTML-CSS-JS",
-      "period": "2022-09 ~ 2022-11",
+      "period": "< 2022-09 ~ 2022-11 >",
       "title": "HTML + CSS + JS",
-      "link-title": "오늘 뭐먹지?",
-      "content": "공부한 내용을 정리한 레포지토리 입니다."
+      "linkTitle": "오늘 뭐먹지?"
     },
+    {"content": "공부한 내용을 정리한 레포지토리 입니다."},
     {
       "link": "https://github.com/hyunyeee/FoodWorldcup",
-      "period": "2022-12",
+      "period": "< 2022-12 >",
       "title": "정리 + JQuery",
-      "link-title": "음식 월드컵",
-      "content": "HTML + CSS + JS + JQuery를\n복습하는 차원에서 만든 음식 월드컵입니다.\nHTML요소를 찾아 JS를 적용시키는 연습을 했습니다."
+      "linkTitle": "음식 월드컵"
     },
+    {"content": "HTML + CSS + JS + JQuery를\n복습하는 차원에서 만든 음식 월드컵입니다.\nHTML요소를 찾아 JS를 적용시키는 연습을 했습니다."},
+
     {
       "link": "https://github.com/Thingk0/Thingji-market",
-      "period": "2023-01 ~ 현재",
+      "period": "⭐< 2023-01 ~ 현재 ⭐ >",
       "title": "React",
-      "link-title": "띵지마켓 토이프로젝트",
-      "content": "현재 리액트를 공부하면서 토이프로젝트를 진행하고 있습니다. (23.02.19 ~)\n팀은 프론트 1 + 백 3으로 구성되어 있고,\n프론트를 맡아 React를 사용하여 진행중입니다."
-    }
+      "linkTitle": "띵지마켓 토이프로젝트"
+
+    },
+    {"content": "현재 리액트를 공부하면서 토이프로젝트를 진행하고 있습니다. (23.02.19 ~)\n팀은 프론트 1 + 백 3으로 구성되어 있고,\n프론트를 맡아 React를 사용하여 진행중입니다."}
   ]
 }

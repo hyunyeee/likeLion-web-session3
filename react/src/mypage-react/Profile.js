@@ -1,14 +1,11 @@
 import React from 'react';
 
 const Profile = (props) => {
-
     const {name, profileImg, src} = props.data;
 
 
-    console.log(src.githubIcon)
     return (
-        <div>
-
+        <>
             <div id="profile" className="contentWrap">
                 <div id="pfImg">
                     <img id="my_img" src={profileImg} alt="github_profileImg"/>
@@ -28,7 +25,7 @@ const Profile = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -4,7 +4,7 @@ import './myPage.css';
 import Data from './MyData.json'
 import Profile from "./Profile";
 import TextBox from "./TextBox";
-import Github from "./Github";
+import Githubs from "./Githubs";
 
 
 const MainPage = () => {
@@ -20,22 +20,11 @@ const MainPage = () => {
                         <Profile data={Data} />
                         <TextBox data={Data} />
                     </div>
-
-                    <Github data={Data} />
+                    <div id="content" className="contentWrap">
+                        <Githubs data={Data} />
+                    </div>
                 </div>
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
         </>
     );
 };
