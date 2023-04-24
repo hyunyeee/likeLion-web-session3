@@ -1,19 +1,38 @@
-#Wrapper {
+.Wrapper {
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.15) 2%, rgba(255, 169, 209, 0.15) 100%);
     width: 1200px;
     height: auto;
     border: 1px solid #51567d;
     padding: 15px;
     margin: 30px auto;
-    background: linear-gradient(90deg, rgba(153, 156, 228, 0.15) 2%, rgba(255, 169, 209, 0.15) 100%);
     box-shadow: 2px 2px 5px #8d96d5;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#title {
+.darkWrapper {
+    background-color: #51567d;
+    width: 1200px;
+    height: auto;
+    border: 1px solid #d2daff;
+    padding: 15px;
+    margin: 30px auto;
+    box-shadow: 2px 2px 5px #8d96d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
     margin: 20px auto;
     text-align: center;
+}
+
+.dark_title {
+    margin: 20px auto;
+    text-align: center;
+    color: #f2f5ff;
 }
 
 .Container {
@@ -63,12 +82,20 @@
     align-items: center;
 }
 
-#text {
+.text {
     line-height: 45px;
     color: #2F2F2FFF;
     font-weight: 400;
     white-space: pre-wrap;
 }
+
+.dark_text {
+    line-height: 45px;
+    color: #f2f5ff;
+    font-weight: 400;
+    white-space: pre-wrap;
+}
+
 
 #content {
     width: 90%;
@@ -79,11 +106,20 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.dark_contentWrap {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #d2daff;
+}
+
 div {
     border: 1px solid #51567d;
     border-radius: 8px;
     height: auto;
     text-align: center;
+}
+
+div .darkBorder {
+    border: 1px solid #d2daff;
 }
 
 p {
@@ -100,8 +136,13 @@ li > a {
 }
 
 .link_title {
-    color: #8d96d5;
+    color: #8493fc;
 }
+
+.dark_link_title {
+    color: rgba(76, 91, 255, 0.52);
+}
+
 
 img {
     width: 100%;
@@ -133,7 +174,6 @@ b {
     height: 80px;
     margin: 10px;
     border: 1px solid transparent;
-
 }
 
 #pfImg {
@@ -176,6 +216,12 @@ b {
     font-weight: bold;
 }
 
+.dark_period {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F2F5FFFF;
+}
+
 li {
     position: relative;
     line-height: 33px;
@@ -185,6 +231,18 @@ li {
     border-radius: 8px;
     background: linear-gradient(90deg, rgba(153, 156, 228, 0.2) 2%, rgba(255, 169, 209, 0.2) 100%);
 }
+
+
+.dark_li {
+    position: relative;
+    line-height: 33px;
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid #d2daff;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.2) 2%, rgba(255, 169, 209, 0.2) 100%);
+}
+
 
 li:nth-child(2n-1):hover {
     border-color: transparent;
@@ -255,10 +313,6 @@ h1 {
     background-size: cover;
 }
 
-
-
-
-
-
-
-
+.darkWrapper {
+    background-color: #51567d;
+}

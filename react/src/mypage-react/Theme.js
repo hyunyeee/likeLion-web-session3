@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import sun from "../img/sun.png"
 import moon from "../img/full-moon.png"
-const Theme = () => {
 
 
-    const [isClicked, setIsClicked] = useState(false);
+const Theme = (props) => {
+    const {setDark, isDark} = props
 
     const onClick = () => {
-        setIsClicked((current) => !current)
-
+        setDark((isDark) => !isDark)
     }
 
 
@@ -16,7 +15,7 @@ const Theme = () => {
         <div id="themeBox">
             <img id="sunNmoon"
                 onClick={onClick}
-                src={isClicked ? moon : sun}
+                src={isDark ? moon : sun}
             />
         </div>
     );

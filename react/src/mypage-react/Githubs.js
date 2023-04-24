@@ -3,14 +3,15 @@ import Github from "./Github";
 
 const Githubs = (props) => {
     const {contents} = props.data;
+    const {isDark} = props;
 
 
     return (
         <>
             <ul>
                 {contents && contents.map((content, index) => (
-                    <li key={index} className={index % 2 === 0 ? null : "memo"}>
-                        <Github data={content} idx={index}/>
+                    <li key={index} className={index % 2 === 0 ? "dark_li" : "memo"}>
+                        <Github data={content} idx={index} isDark={isDark}/>
                     </li>
                 ))}
                 {/* React 는 렌더링이 화면에 커밋 된 후에야 모든 효과를 실행
