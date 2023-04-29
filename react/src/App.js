@@ -3,6 +3,7 @@ import MainPage from "./mypage-react/MainPage";
 import Login from "./mypage-react/Login";
 import {useState} from "react";
 import {UserInfo} from "./mypage-react/UserInfo";
+import {ThemeProvider} from "./mypage-react/ThemeProvider";
 
 
 function App() {
@@ -18,13 +19,14 @@ function App() {
         console.log(isLoggedIn)
     }
 
-    // todo isLoggedin true로 만드는 함수 Login으로 전달
 
     return (
         <>
-            {isLoggedIn ? <MainPage /> : <Login login={LoginLogic}/>}
-        </>
+            <ThemeProvider>
+                {isLoggedIn ? <MainPage /> : <Login login={LoginLogic}/>}
+            </ThemeProvider>
 
+        </>
     )
 
 }

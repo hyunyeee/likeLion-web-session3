@@ -1,7 +1,6 @@
 //Login.js
 import React, {useState} from "react";
 import "./Login.css";
-// import {UserInfo} from "./UserInfo";
 
 const Login = (props) => {
     const [id, setId] = useState("");
