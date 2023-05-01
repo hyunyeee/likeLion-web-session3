@@ -1,17 +1,41 @@
-#Wrapper {
-    width:1200px;
+.Wrapper {
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.15) 2%, rgba(255, 169, 209, 0.15) 100%);
+    width: 1200px;
     height: auto;
     border: 1px solid #51567d;
     padding: 15px;
     margin: 30px auto;
-    background: linear-gradient(90deg, rgba(153, 156, 228, 0.15) 2%, rgba(255,169,209, 0.15) 100%);
     box-shadow: 2px 2px 5px #8d96d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#title {
-    margin : 5px auto 20px;
+
+.darkWrapper {
+    background-color: #51567d;
+    width: 1200px;
+    height: auto;
+    border: 1px solid #d2daff;
+    padding: 15px;
+    margin: 30px auto;
+    box-shadow: 2px 2px 5px #8d96d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 20px auto;
     text-align: center;
 }
-#Container {
+
+.dark_title {
+    margin: 20px auto;
+    text-align: center;
+    color: #f2f5ff;
+}
+
+.Container {
     margin: 0 auto;
     width: 90%;
     padding: 20px;
@@ -19,20 +43,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(153,156,228);
-    background: linear-gradient(90deg, rgba(153, 156, 228, 0.5) 2%, rgba(255,169,209, 0.5) 100%);
+    background: rgb(153, 156, 228);
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.5) 2%, rgba(255, 169, 209, 0.5) 100%);
 }
+
 #Container > div {
     background-color: rgba(255, 255, 255, 0.16);
 }
+
 #top-wrap {
     width: 90%;
     margin: 15px;
+    padding: 20px;
     display: flex;
     justify-items: center;
     justify-content: space-between;
     align-items: center;
 }
+
 #profile {
     display: flex;
     flex-direction: column;
@@ -44,37 +72,61 @@
     padding: 20px;
     font-size: 20px;
 }
+
 #textBox {
     width: 600px;
     height: 200px;
     margin: 20px;
-    padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#text {
+
+.text {
     line-height: 45px;
     color: #2F2F2FFF;
     font-weight: 400;
     white-space: pre-wrap;
 }
+
+.dark_text {
+    line-height: 45px;
+    color: #f2f5ff;
+    font-weight: 400;
+    white-space: pre-wrap;
+}
+
+
 #content {
     width: 90%;
+    padding: 20px;
 }
+
 .contentWrap {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.dark_contentWrap {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #d2daff;
+}
+
 div {
     border: 1px solid #51567d;
     border-radius: 8px;
     height: auto;
     text-align: center;
 }
+
+div .darkBorder {
+    border: 1px solid #d2daff;
+}
+
 p {
     font-weight: 400;
     margin: 0;
 }
+
 li > a {
     width: 100%;
     font-weight: bold;
@@ -82,14 +134,21 @@ li > a {
     text-decoration: none;
     color: #2a2a2a;
 }
+
 .link_title {
-    color: #8d96d5;
+    color: #8493fc;
 }
+
+.dark_link_title {
+    color: rgba(76, 91, 255, 0.52);
+}
+
 
 img {
     width: 100%;
     height: 100%;
 }
+
 /*fieldset {margin-bottom: 15px;}*/
 ul {
     margin: 30px auto;
@@ -100,22 +159,24 @@ ul {
 b {
     color: #2f2f2f;
 }
+
 #icons {
     margin: 8px;
     width: auto;
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg, rgba(153, 156, 228, 0.2) 2%, rgba(255,169,209, 0.2) 100%);
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.2) 2%, rgba(255, 169, 209, 0.2) 100%);
     border-radius: 25px;
 }
+
 .box {
     width: 80px;
     height: 80px;
     margin: 10px;
     border: 1px solid transparent;
-
 }
-#pfImg{
+
+#pfImg {
     filter: drop-shadow(0px 0px 5px #9958d5);
     width: 150px;
     height: 150px;
@@ -123,31 +184,44 @@ b {
     border: 1px solid transparent;
 
 }
+
 #my_img {
     border-radius: 30%;
 }
-#github{
+
+#github {
     opacity: 70%;
     cursor: pointer;
 }
+
 #github:hover {
     opacity: 1;
     transition: all 0.8s ease-in-out;
 }
-#instar{
+
+#instar {
     filter: grayscale(100%);
     opacity: 70%;
     cursor: pointer;
 }
+
 #instar:hover {
     opacity: 1;
     filter: none;
     transition: all 0.3s ease-in-out;
 }
+
 .period {
     font-size: 20px;
     font-weight: bold;
 }
+
+.dark_period {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F2F5FFFF;
+}
+
 li {
     position: relative;
     line-height: 33px;
@@ -155,18 +229,33 @@ li {
     width: 500px;
     border: 1px solid #8d96d5;
     border-radius: 8px;
-    background: linear-gradient(90deg, rgba(153, 156, 228, 0.2) 2%, rgba(255,169,209, 0.2) 100%);
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.2) 2%, rgba(255, 169, 209, 0.2) 100%);
 }
+
+
+.dark_li {
+    position: relative;
+    line-height: 33px;
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid #d2daff;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.2) 2%, rgba(255, 169, 209, 0.2) 100%);
+}
+
+
 li:nth-child(2n-1):hover {
     border-color: transparent;
     cursor: pointer;
-    background: rgb(153,156,228);
-    background: linear-gradient(90deg, rgba(153, 156, 228, 0.5) 2%, rgba(255,169,209, 0.5) 100%);
+    background: rgb(153, 156, 228);
+    background: linear-gradient(90deg, rgba(153, 156, 228, 0.5) 2%, rgba(255, 169, 209, 0.5) 100%);
 }
+
 li.memo {
     margin: 10px auto 60px;
     background-color: rgb(255, 255, 255);
 }
+
 #info {
     width: 100%;
     height: 100px;
@@ -175,4 +264,55 @@ li.memo {
 
 #contentTxt {
     white-space: pre-wrap;
+}
+
+#right-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#heartBox {
+    border: 0;
+    width: 100px;
+    height: 100px;
+}
+
+
+#top-wrapper {
+    position: relative;
+    margin: 10px;
+    border: 0;
+    width: 90%;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+#buttons {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    border: 0;
+}
+
+#themeBox {
+    width: 100px;
+    height: 100px;
+    border: 0;
+}
+
+#sunNmoon {
+    background-size: cover;
+}
+
+.darkWrapper {
+    background-color: #51567d;
 }

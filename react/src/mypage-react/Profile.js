@@ -2,17 +2,17 @@ import React from 'react';
 
 const Profile = (props) => {
     const {name, profileImg, src} = props.data;
-
+    const {isDark} = props;
 
     return (
         <>
-            <div id="profile" className="contentWrap">
-                <div id="pfImg">
+            <div id="profile" className={isDark ? "dark_contentWrap" : "contentWrap"}>
+                <div id="pfImg" >
                     <img id="my_img" src={profileImg} alt="github_profileImg"/>
                 </div>
                 <b>{name}</b>
 
-                <div id="icons">
+                <div id="icons" className={isDark ? "darkBorder" : ""}>
                     <div id="github" className="box">
                         <a href={src.githubLink}>
                             <img src={src.githubIcon} alt="github" />
